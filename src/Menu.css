@@ -1,0 +1,19 @@
+.MenuBox {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:small;
+    background-color: #C4C4C4;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.font1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.head2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(61, 54, 53);
+}

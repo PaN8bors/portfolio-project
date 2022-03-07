@@ -1,0 +1,12 @@
+.NameBox {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:small;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.font2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(61, 54, 53);
+}

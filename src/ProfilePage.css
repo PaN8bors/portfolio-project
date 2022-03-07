@@ -1,0 +1,30 @@
+.proBox {
+    margin-top: 200px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #C4C4C4;
+    font-size:small;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    width: 80%;
+}
+
+.pBox {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(61, 54, 53);
+    font-size: x-large;
+    border: 2px;
+    border-top: 0;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    width: 80%;
+}
+
+.boxes {
+    margin-left: 100px;
+    margin-right: 100px;
+}
