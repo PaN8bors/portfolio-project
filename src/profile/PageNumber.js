@@ -1,9 +1,15 @@
-import "./PageNumber.css";
+import { Link } from "react-router-dom";
+import "./ProfileHeader.css";
 
 export default function PageNumber() {
     return (
         <>
-            <h1 className="nf1">Page:<span className="nf2">&nbsp;1</span></h1>
+        <div className="PrflBox">
+            <h1 className="hd1">Page: 1</h1>
+            <Link to="/">
+                <h2 className="hd2">Home</h2>
+            </Link>
+        </div>
         </>
         
     )

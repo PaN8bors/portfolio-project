@@ -14,7 +14,9 @@ export default function ProjectPage() {
             <div className="pjBox boxes">
                 <p className="redRow">
                     <div className="blue">
-                        <img src={Fun} />
+                        <a href="https://github.com/PaN8bors/portfolio-project">
+                            <img src={Fun} />
+                        </a>
                     </div>
                     <div className="green"><p><b>Send Some Fun!</b><br />
                         Create an eGreeting Card you can send to anyone.</p>
@@ -23,7 +25,9 @@ export default function ProjectPage() {
                             <div className="iconBox"><img src={REACT} /></div>
                     </div>
                     <div className="blue">
-                        <img src={Pro} />
+                        <a href="https://github.com/PaN8bors/my-ecard">
+                            <img src={Pro} />
+                        </a>
                     </div>
                     <div className="green"><p><b>Personal Portfolio Website</b><br />
                         Created to introduce myself to the web development world.</p>
