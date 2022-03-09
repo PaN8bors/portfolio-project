@@ -1,0 +1,9 @@
+.nf1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+.nf2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(61, 54, 53);
+}

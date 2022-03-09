@@ -5,12 +5,11 @@ img {
 }
 
 .picBox {
-    width: 275px;
+    width: 255px;
     height: 375px;
-    border: .5px;
+    border: 2px;
     border-style: solid;
-    border-color: gray;
     background-color:rgb(255, 255, 255);
     box-shadow: 10px 5px 5px gray;
-    padding: 10px;
+    padding: 15px;
   }

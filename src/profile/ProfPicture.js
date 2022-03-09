@@ -1,5 +1,5 @@
 import "./ProfPicture.css";
-import MyPic from "../Images/bw.png";
+import MyPic from "../Images/color.png";
 
 export default function ProfPicture() {
     return (

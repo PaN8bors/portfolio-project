@@ -1,15 +1,10 @@
 
 .wrapper {
   justify-content: space-evenly;
-  /* background-image:
-  url("../public/Assets/folder4.png");
-  background-size: "30%";
-  background-position: center; */
   height: 600px;
-  overflow-y: scroll;
   width: 100%;
   position: fixed;
-  /* background-repeat:no-repeat;  */
+  overflow-y: scroll;
 }
 
 .folder {
@@ -18,24 +13,31 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  /* background-repeat:no-repeat;  */
 }
 
 .row {
+  margin-top: -950px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 50px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 90%;
 }
+
 .row3 {
-  margin-top: -1150px;
+  margin-top: -1000px;
   margin-right: 100px;
   width: 100%;
   justify-content: flex-end;
@@ -69,14 +71,13 @@
 }
 
 .column3 {
-  margin-top: -150px;
+  margin-top: -70px;
+  margin-left: 0;
   background-image: 
-  url("../public/Assets/official2.png");
+  url("./Images/off-doc2.png");
   background-repeat: no-repeat;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
 }
 
