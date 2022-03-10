@@ -11,14 +11,15 @@
 }
 
 .pjBox {
-    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(61, 54, 53);
+    font-size: x-large;
     border: 2px;
     border-top: 0;
     border-style: solid;
     border-color: black;
-    padding: 5px;
+    padding: 10px;
     width: 1250px;
-    text-align: center;
 }
 
 .boxes {
@@ -29,17 +30,44 @@
 .flexRow {
     display: flex;
     flex-flow: row wrap;
+    /* justify-content: space-around; */
     width: 100%;
 }
 
-.column {
+.blue {
+    background-color: 0;
+    height: 250px;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.green {
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 250px;
+    width: 50%;
+}
+
+imgs {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.iconBox {
+    width: 80px;
+    height: 80px;
+    /* border: 2px;
+    border-style: solid;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px gray; */
+    /* padding: 15px; */
 }
 
 .gitBox {
+    order: 1;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(61, 54, 53);
     font-size: medium;
@@ -49,4 +77,6 @@
     border-color: black;
     padding: 10px;
     width: 40%;
+
+
 }

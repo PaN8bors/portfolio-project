@@ -1,45 +1,49 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import Project from "./ImportProject.jsx";
 import "./ProjectPage.css";
-import Fun from '../Images/some-fun.png';
-import Pro from '../Images/pro-portfolio.png';
-import HTML from '../Images/html-5.png';
-import CSS from '../Images/css.png';
-import REACT from '../Images/react.png';
 
 export default function ProjectPage() {
-    return (
-        <>
-            <div className="projBox boxes">
-                <h1>Projects:</h1>
-            </div>
-            <div className="pjBox boxes">
-                <p className="redRow">
-                    <div className="blue">
-                        <a href="https://github.com/PaN8bors/portfolio-project">
-                            <img src={Fun} />
-                        </a>
-                    </div>
-                    <div className="green"><p><b>Send Some Fun!</b><br />
-                        Create an eGreeting Card you can send to anyone.</p>
-                        <div className="iconBox"><img src={HTML} /></div>
-                            <div className="iconBox"><img src={CSS} /></div>
-                            <div className="iconBox"><img src={REACT} /></div>
-                    </div>
-                    <div className="blue">
-                        <a href="https://github.com/PaN8bors/my-ecard">
-                            <img src={Pro} />
-                        </a>
-                    </div>
-                    <div className="green"><p><b>Personal Portfolio Website</b><br />
-                        Created to introduce myself to the web development world.</p>
-                            <div className="iconBox"><img src={HTML} /></div>
-                            <div className="iconBox"><img src={CSS} /></div>
-                            <div className="iconBox"><img src={REACT} /></div>
-                    </div>
-                </p>
-            </div>
-        </>
+  let [projects, setProjects] = useState([]);
+  let i = 0;
 
-            
-        
-    )
+  useEffect(() => {
+      if (projects.length > 0) {
+          return
+      }
+    fetch("https://api.github.com/users/PaN8bors/repos?per_page=100")
+      .then((resp) => {
+        return resp.json();
+      })
+      .then((projects) => {
+        const filtered = projects.filter((project) => {
+          return project.stargazers_count >= 1;
+        });
+        console.log(filtered);
+        setProjects(filtered);
+      });
+  });
+  return (
+    <>
+      <div className="projBox boxes">
+        <h1>Projects:</h1>
+      </div>
+      <div className="pjBox boxes">
+            <div className="projects">
+                {projects.map((project) => {
+                i += 1;
+                return (
+                    <div className="gitBox">
+                        <Project
+                            name={project.name}
+                            description={project.description}
+                            key={i}
+                        ></Project>
+                    </div>
+            );
+        })}
+        </div>
+      </div>
+    </>
+  );
 }
