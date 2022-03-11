@@ -1,6 +1,6 @@
 import ProfileHeader from './ProfileHeader';
 import ProjectPage from './ProjectPage';
-import PageNumber from './PageNumber';
+import PageNmber from './PageNmber';
 
 export default function Profile() {
   return (
@@ -9,7 +9,7 @@ export default function Profile() {
           <ProfileHeader></ProfileHeader>
         </div>
             <div className='column2'>
-              <PageNumber></PageNumber>
+              <PageNmber></PageNmber>
             </div>
         <div className='row2'>
           <ProjectPage></ProjectPage>

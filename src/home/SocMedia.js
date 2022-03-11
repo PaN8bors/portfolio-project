@@ -9,7 +9,7 @@ export default function CoverHeader() {
                 <a href={'https://github.com/PaN8bors/'}>
                     &nbsp;<u>GitHub</u>&nbsp;
                 </a>
-                <a href={'www.linkedin.com/in/parishneighbors01'}>
+                <a href={'https://linkedin.com/in/parishneighbors01'}>
                     &nbsp;<u>LinkedIn</u>
                 </a>
                 </span></h1>

@@ -1,10 +1,20 @@
+import Typewriter from 'typewriter-effect';
 import "./ProfilePage.css";
 
 export default function ProfilePage() {
     return (
         <>
         <div className="proBox boxes">
-            <h1>Profile:</h1>
+            <h1>Profile:
+            <span className='font2'>
+                <Typewriter onInit={(typewriter) => {typewriter
+                    .start()
+                    .pauseFor(1000)
+                    .typeString('Some personal and professional data.')
+                  }}
+                />
+            </span>
+            </h1>
         </div>
         <div className="pBox boxes">
             <p>

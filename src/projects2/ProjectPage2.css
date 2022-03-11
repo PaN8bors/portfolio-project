@@ -30,7 +30,7 @@
 .flexRow {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-around; */
+    justify-content: center;
     width: 100%;
 }
 
@@ -50,7 +50,7 @@
     width: 50%;
 }
 
-imgs {
+.imgs {
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -59,24 +59,6 @@ imgs {
 .iconBox {
     width: 80px;
     height: 80px;
-    /* border: 2px;
-    border-style: solid;
-    background-color:rgb(255, 255, 255);
-    box-shadow: 10px 5px 5px gray; */
-    /* padding: 15px; */
 }
 
-.gitBox {
-    order: 1;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(61, 54, 53);
-    font-size: medium;
-    border: 2px;
-    /* border-top: 0; */
-    border-style: solid;
-    border-color: black;
-    padding: 10px;
-    width: 40%;
 
-
-}

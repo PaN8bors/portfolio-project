@@ -8,7 +8,6 @@
 }
 
 .folder {
-  
   justify-content: space-evenly;
   height: 100vh;
   width: 100%;
@@ -73,11 +72,9 @@
 .column3 {
   margin-top: -70px;
   margin-left: 0;
-  background-image: 
-  url("./Images/off-doc2.png");
+  background-image: url("./Images/off-doc2.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-
